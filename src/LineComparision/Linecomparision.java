@@ -27,10 +27,21 @@ public static void main(String[] args) {
 
 					System.out.printf("length of 1st end points are : %.2f %n", length_of_line1);
 					System.out.printf("length of 2nd end points are : %.2f %n", length_of_line2);
+					
+					/**
 					boolean val = length_of_line1.equals(length_of_line2);
 					if(val)
 						System.out.println("Both lines are equal.");
 					else
 						System.out.println("Both lines are not equal.");
+					*/
+					
+					int com = length_of_line1.compareTo(length_of_line2);
+					if(com > 0)
+						System.out.println("Length of first end points is greater than length of second end points");
+					else if(com < 0)
+						System.out.println("Length of first end points is less than length of second end points");
+					else
+						System.out.println("Both lines are equal."); 
 	}
 }
